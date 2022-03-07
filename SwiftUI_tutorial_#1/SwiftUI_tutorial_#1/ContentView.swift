@@ -8,15 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State
+    private var isActivated = false
+    
     var body: some View {
         HStack{
             MyVStackView()
             MyVStackView()
             MyVStackView()
         }
-        .padding(10)
+        .padding(isActivated ? 50 : 10)
         // default: .all
-        .background(Color.yellow)
+        .background(isActivated ? Color.yellow : Color.black)
+        
+        // 탭 제스쳐
+        .onTapGesture {
+            print("Click HStack")
+            withAnimation{
+                isActivated.toggle()
+            }
+        }
     }
 }
 

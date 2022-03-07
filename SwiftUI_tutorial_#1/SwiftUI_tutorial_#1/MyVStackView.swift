@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct MyVStackView: View{
     var body: some View{
         
@@ -23,6 +22,6 @@ struct MyVStackView: View{
                 .font(.system(size: 40))
         }
         .background(Color.red)
-        
+
     }
 }
