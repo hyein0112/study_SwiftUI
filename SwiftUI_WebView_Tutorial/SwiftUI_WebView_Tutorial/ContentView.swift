@@ -11,9 +11,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             VStack{
-                VStack{
-                    
-                }
                 RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
                     .offset(y: -150)
                     .foregroundColor(Color.yellow)
