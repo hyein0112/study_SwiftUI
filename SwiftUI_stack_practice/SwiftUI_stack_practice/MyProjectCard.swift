@@ -9,7 +9,32 @@ import SwiftUI
 
 struct MyProjectCard: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading){
+            Rectangle().frame(height: 0)
+            Text("프로젝트")
+                .font(.system(size: 25))
+                .fontWeight(.black)
+            Text("10 AM ~ 11 AM")
+                .foregroundColor(.secondary)
+                .padding(.bottom, 10)
+            HStack{
+                Circle().frame(width: 50, height: 50)
+                Circle().frame(width: 50, height: 50)
+                Circle().frame(width: 50, height: 50)
+                
+                Spacer()
+                
+                Text("**확인**")
+                    .foregroundColor(.white)
+                    .padding()
+                    .frame(width: 80)
+                    .background(Color.blue)
+                    .cornerRadius(20)
+            }
+        }
+        .padding(30)
+        .background(Color.yellow)
+        .cornerRadius(20)
     }
 }
 
