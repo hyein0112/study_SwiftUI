@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MyProjectCard: View {
     var body: some View {
-        VStack(alignment: .leading){
+        VStack(alignment: .leading, spacing: 0){
             Rectangle().frame(height: 0)
             Text("프로젝트")
                 .font(.system(size: 25))
@@ -18,9 +18,23 @@ struct MyProjectCard: View {
                 .foregroundColor(.secondary)
                 .padding(.bottom, 10)
             HStack{
-                Circle().frame(width: 50, height: 50)
-                Circle().frame(width: 50, height: 50)
-                Circle().frame(width: 50, height: 50)
+                Image("user1")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                    .overlay(
+                        Circle()
+                            .stroke(lineWidth: 5)
+                            .foregroundColor(Color.blue)
+                    )
+                Image("user2")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                Image("user3")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
                 
                 Spacer()
                 
