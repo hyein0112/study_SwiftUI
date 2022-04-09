@@ -12,6 +12,7 @@
 		C04117CC2801AB9500E7F481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C04117CB2801AB9500E7F481 /* Assets.xcassets */; };
 		C04117CF2801AB9500E7F481 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C04117CE2801AB9500E7F481 /* Preview Assets.xcassets */; };
 		C04117D82801ABEE00E7F481 /* MyProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04117D72801ABEE00E7F481 /* MyProjectCard.swift */; };
+		C04117DA2801B60000E7F481 /* MyBasicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04117D92801B60000E7F481 /* MyBasicCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		C04117CB2801AB9500E7F481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C04117CE2801AB9500E7F481 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C04117D72801ABEE00E7F481 /* MyProjectCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectCard.swift; sourceTree = "<group>"; };
+		C04117D92801B60000E7F481 /* MyBasicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBasicCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				C04117C72801AB9200E7F481 /* SwiftUI_stack_practiceApp.swift */,
 				C04117C92801AB9200E7F481 /* ContentView.swift */,
 				C04117D72801ABEE00E7F481 /* MyProjectCard.swift */,
+				C04117D92801B60000E7F481 /* MyBasicCard.swift */,
 				C04117CB2801AB9500E7F481 /* Assets.xcassets */,
 				C04117CD2801AB9500E7F481 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				C04117D82801ABEE00E7F481 /* MyProjectCard.swift in Sources */,
 				C04117CA2801AB9200E7F481 /* ContentView.swift in Sources */,
+				C04117DA2801B60000E7F481 /* MyBasicCard.swift in Sources */,
 				C04117C82801AB9200E7F481 /* SwiftUI_stack_practiceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
