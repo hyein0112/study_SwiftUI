@@ -9,7 +9,21 @@ import SwiftUI
 
 struct MyBasicCard: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            VStack(alignment: .leading, spacing: 0){
+                Rectangle().frame(height: 0)
+                Text("프로젝트 회의하기")
+                    .font(.system(size: 25))
+                    .fontWeight(.black)
+                Text("10 AM ~ 11 AM")
+                    .foregroundColor(.secondary)
+                
+            }
+            .padding(30)
+            .background(Color.yellow)
+            .cornerRadius(20)
+        }
+        
     }
 }
 
