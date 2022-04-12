@@ -8,27 +8,35 @@
 import SwiftUI
 
 struct MyBasicCard: View {
+    var imageName: String
+    var titleName: String
+    var subtitleName: String
+    var backgroundColor: Color
+    
     var body: some View {
-        HStack{
+        HStack(spacing: 20){
+            Image(systemName: imageName)
+                .font(.system(size: 30)).frame(width: 70, height: 50)
+            
             VStack(alignment: .leading, spacing: 0){
                 Rectangle().frame(height: 0)
-                Text("프로젝트 회의하기")
+                Text(titleName)
                     .font(.system(size: 25))
                     .fontWeight(.black)
-                Text("10 AM ~ 11 AM")
-                    .foregroundColor(.secondary)
-                
+                    .padding(.bottom,5)
+                Text(subtitleName)
             }
-            .padding(30)
-            .background(Color.yellow)
-            .cornerRadius(20)
         }
+        .foregroundColor(.white)
+        .padding(30)
+        .background(backgroundColor)
+        .cornerRadius(20)
         
     }
 }
 
 struct MyBasicCard_Previews: PreviewProvider {
     static var previews: some View {
-        MyBasicCard()
+        MyBasicCard(imageName: "person.3", titleName: "프로젝트 회의", subtitleName: "09AM ~ 10AM", backgroundColor: .blue)
     }
 }

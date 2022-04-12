@@ -44,6 +44,9 @@ struct MyProjectCard: View {
                     .frame(width: 80)
                     .background(Color.blue)
                     .cornerRadius(20)
+                    .onTapGesture {
+                        print("확인")
+                    }
             }
         }
         .padding(30)
