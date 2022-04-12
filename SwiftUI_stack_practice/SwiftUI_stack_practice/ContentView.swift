@@ -38,7 +38,7 @@ struct ContentView: View {
                         MyBasicCard(imageName: "pencil", titleName: "입력", subtitleName: "00PM ~ 00PM", backgroundColor: .gray)
                         MyBasicCard(imageName: "pencil", titleName: "입력", subtitleName: "00PM ~ 00PM", backgroundColor: .gray)
                         MyBasicCard(imageName: "pencil", titleName: "입력", subtitleName: "00PM ~ 00PM", backgroundColor: .gray)
-                    }.padding()
+                    }.padding().frame(maxWidth: .infinity)
                 }
                     
                 
