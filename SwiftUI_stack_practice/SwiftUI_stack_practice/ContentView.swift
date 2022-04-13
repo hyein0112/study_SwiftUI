@@ -29,7 +29,7 @@ struct ContentView: View {
                 Text("To Do List").fontWeight(.bold).font(.system(size: 50))
                     .padding()
                 ScrollView{
-                    VStack{
+                    VStack(spacing: 20){
                         MyProjectCard()
                         MyBasicCard(imageName: "person.3", titleName: "프로젝트 회의", subtitleName: "09AM ~ 10AM", backgroundColor: .blue)
                         MyBasicCard(imageName: "airpods.gen3", titleName: "노래듣기", subtitleName: "02PM ~ 03PM", backgroundColor: .purple)

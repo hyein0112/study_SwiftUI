@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MyProjectCard: View {
+    @State var shouldShowAlert = false
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 0){
             Rectangle().frame(height: 0)
@@ -38,15 +40,20 @@ struct MyProjectCard: View {
                 
                 Spacer()
                 
-                Text("**확인**")
-                    .foregroundColor(.white)
-                    .padding()
-                    .frame(width: 80)
-                    .background(Color.blue)
-                    .cornerRadius(20)
-                    .onTapGesture {
-                        print("확인")
-                    }
+                Button(action: {
+                    print("확인")
+                    
+                    shouldShowAlert = true
+                }){
+                    Text("**확인**")
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(width: 80)
+                        .background(Color.blue)
+                        .cornerRadius(20)
+                }.alert(isPresented: $shouldShowAlert){
+                    Alert(title: Text("확인"))
+                }
             }
         }
         .padding(30)
